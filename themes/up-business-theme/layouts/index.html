@@ -1,8 +1,23 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}
-  {{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
-  {{ with .Site.Data.home.portfolio }}{{ partial "sections/portfolio.html" . }}{{ end }}
+
+  {{ if .Site.Data.home.howwework.enabled }}
+    {{ with .Site.Data.home.howwework }}{{ partial "sections/howwework.html" . }}{{ end }}
+  {{ end }}
+
+  {{ if .Site.Data.home.brands.enabled }}
+    {{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
+  {{ end }}
+  
+  {{ if .Site.Data.home.portfolio.enabled }}
+    {{ with .Site.Data.home.portfolio }}{{ partial "sections/portfolio.html" . }}{{ end }}
+  {{ end }}
+
   {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
-  {{ with .Site.Data.home.testimonials }}{{ partial "sections/testimonials.html" . }}{{ end }}
+
+  {{ if .Site.Data.home.testimonials.enabled }}
+    {{ with .Site.Data.home.testimonials }}{{ partial "sections/testimonials.html" . }}{{ end }}
+  {{ end }}
+  
   {{ with .Site.Data.home.cta }}{{ partial "sections/cta.html" . }}{{ end }}
 {{ end }}

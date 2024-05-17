@@ -10,9 +10,9 @@ content:
 
   buttonPrimary:
     label: "How we work"
-    url: "#"
+    url: "/how-we-work/"
 
   buttonSecondary:
     label: "Free 20 minute call"
-    url: ""
+    url: "/call/"
 

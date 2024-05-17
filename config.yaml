@@ -1,4 +1,5 @@
-baseURL: "https://www.remotecto.com/"
+# baseURL: "https://www.remotecto.com/"
+baseURL: "http://remote-cto-website.s3-website-ap-southeast-2.amazonaws.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
@@ -30,7 +31,6 @@ params:
     
   contact:
     - "info@remotecto.com"
-    # - "207.555.0119"
 
   copyright: "© 2024 Remote CTO All Rights Reserved"
 
@@ -41,7 +41,7 @@ menus:
       weight: 1
 
     - name: "How we work"
-      url: "/#"
+      url: "/how-we-work/"
       weight: 2
 
     # - name: "Our team"
@@ -52,13 +52,13 @@ menus:
     #   url: "/#"
     #   weight: 4
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 5
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
 
   buttons:
     - name: "Book a call"
-      url: "/#"
+      url: "/call/"
       weight: 5
       pre: "btn btn-primary text-light"
 
@@ -68,7 +68,7 @@ menus:
       weight: 1
 
     - name: "How we work"
-      url: "/#"
+      url: "/how-we-work/"
       weight: 2
 
     # - name: "Our team"
@@ -79,9 +79,9 @@ menus:
     #   url: "/#"
     #   weight: 4
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 5
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
 
 services:
   googleAnalytics:
@@ -90,3 +90,8 @@ services:
 taxonomies:
   series: "series"
   tags: "tags"
+
+deployment:
+  targets:
+    - name: "production"
+      url: s3://remote-cto-website?region=ap-southeast-2

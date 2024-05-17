@@ -2,7 +2,7 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Start your business now!"
+  title: "Try our focused **free 20 minute** call now"
   image: "images/services-web-development.png"
   button:
     label: "Let's talk"

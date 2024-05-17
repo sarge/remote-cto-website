@@ -1,0 +1,51 @@
+<section class="section howwework">
+  <div class="container">
+
+    <div class="row justify-content-center pb-1">
+      <div class="col-12 col-xl-6">
+        {{ with .content.title }}
+        <h3 class="title fs-1 fw-bold text-center text-primary pb-3">{{ . | markdownify}}</h3>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="row g-2">
+      {{ range $i, $e := .content.cards }}
+
+      {{ if (mod $i 2) }}
+      <div class="row g-1">
+        <div class="col-12 col-xl-5 d-flex flex-column justify-content-center d-none d-xl-block">
+          {{ with $e.image }}
+          {{ partial "utilities/image-fluid.html" . }}
+          {{ end }}
+        </div>
+        <div class="col-12 col-xl-7 d-flex flex-column justify-content-center">
+          <div class="card align-items-start border-0 shadow p-5">
+            {{ .text | markdownify }}
+            <div class="py-1">
+              {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ else }}
+      <div class="row g-1">
+        <div class="col-12 col-xl-7 d-flex flex-column justify-content-center">
+          <div class="card align-items-start border-0 shadow p-5">
+            {{ .text | markdownify }}
+            <div class="py-1">
+              {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-5 d-flex flex-column justify-content-center d-none d-xl-block">
+          {{ with $e.image }}
+          {{ partial "utilities/image-fluid.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

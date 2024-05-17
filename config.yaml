@@ -1,10 +1,8 @@
-baseURL: "https://www.example.com/"
+baseURL: "https://www.remotecto.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
 title: "Remote CTO"
-
-# googleAnalytics: ""
 
 summaryLength: 20
 
@@ -22,20 +20,19 @@ params:
     faviconColor: "#000000"
 
   social:
-    dribbble: "#"
-    instagram: "#"
-    facebook: "#"
+    # dribbble: "#"
+    # instagram: "#"
+    # facebook: "#"
     # twitter: "#"
 
   location:
-    - "3891 Ranchview Dr. Richardson, California 62639"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
-
+    - "Tauranga, New Zealand"
+    
   contact:
-    - "trungkienspktnd@gamail.com"
-    - "207.555.0119"
+    - "info@remotecto.com"
+    # - "207.555.0119"
 
-  copyright: "© 2022 Up Business All Rights Reserved"
+  copyright: "© 2024 Remote CTO All Rights Reserved"
 
 menus:
   main:
@@ -47,13 +44,13 @@ menus:
       url: "/#"
       weight: 2
 
-    - name: "Our team"
-      url: "/#"
-      weight: 3
+    # - name: "Our team"
+    #   url: "/#"
+    #   weight: 3
 
-    - name: "Pricing"
-      url: "/#"
-      weight: 4
+    # - name: "Pricing"
+    #   url: "/#"
+    #   weight: 4
 
     - name: "Blog"
       url: "/blog"
@@ -74,17 +71,21 @@ menus:
       url: "/#"
       weight: 2
 
-    - name: "Our team"
-      url: "/#"
-      weight: 3
+    # - name: "Our team"
+    #   url: "/#"
+    #   weight: 3
 
-    - name: "Pricing"
-      url: "/#"
-      weight: 4
+    # - name: "Pricing"
+    #   url: "/#"
+    #   weight: 4
 
     - name: "Blog"
       url: "/blog"
       weight: 5
+
+services:
+  googleAnalytics:
+    id: ""
 
 taxonomies:
   series: "series"

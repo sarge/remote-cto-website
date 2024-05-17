@@ -2,26 +2,26 @@ enabled: true
 id: "services"
 
 content:
-  title: "Our main services"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  title: "What we offer"
+  text: "Here are some of our most popular offerings"
   cards:
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Technology Reviews"
+      text: "We will quickly kick the tyres to see what you have built is what you really need. "
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Process Improvement"
+      text: "A fresh pair of eyes over your teams processes can often reap benefits. "
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/services-web-development.png"
-      title: "Web development"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      title: "Rebuild trust"
+      text: "We are impartial. We can work with your business to rebuild trust between Development and \"the Business\"."
       button:
         label: "Learn more"
         url: "#"

@@ -13,8 +13,8 @@
       {{ range $i, $e := .content.cards }}
 
       {{ if (mod $i 2) }}
-      <div class="row g-1">
-        <div class="col-12 col-xl-5 d-flex flex-column justify-content-center d-none d-xl-block">
+      <div class="row g-3">
+        <div class="col-12 col-xl-3 d-flex align-self-center d-none d-xl-block">
           {{ with $e.image }}
           {{ partial "utilities/image-fluid.html" . }}
           {{ end }}
@@ -29,8 +29,8 @@
         </div>
       </div>
       {{ else }}
-      <div class="row g-1">
-        <div class="col-12 col-xl-7 d-flex flex-column justify-content-center">
+      <div class="row g-3">
+        <div class="col-12 col-xl-7 d-flex align-items-center">
           <div class="card align-items-start border-0 shadow p-5">
             {{ .text | markdownify }}
             <div class="py-1">
@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-xl-5 d-flex flex-column justify-content-center d-none d-xl-block">
+        <div class="col-12 col-xl-3 d-flex align-self-center d-none d-xl-block">
           {{ with $e.image }}
           {{ partial "utilities/image-fluid.html" . }}
           {{ end }}

@@ -46,9 +46,9 @@ menus:
       url: "/how-we-work/"
       weight: 2
 
-    # - name: "Our team"
-    #   url: "/#"
-    #   weight: 3
+    - name: "Our team"
+      url: "/team/"
+      weight: 3
 
     # - name: "Pricing"
     #   url: "/#"
@@ -73,9 +73,9 @@ menus:
       url: "/how-we-work/"
       weight: 2
 
-    # - name: "Our team"
-    #   url: "/#"
-    #   weight: 3
+    - name: "Our team"
+      url: "/team/"
+      weight: 3
 
     # - name: "Pricing"
     #   url: "/#"

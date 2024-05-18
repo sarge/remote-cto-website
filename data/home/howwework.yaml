@@ -21,17 +21,22 @@ content:
 
     - image: "images/finance.png"
       title: "Process Improvement"
-      text: " We’ll understand the **commercial imperative** while at the same time earning the **trust** of your more technical team members enabling us to help them get stuff done.
+      text: "
+        We’ll understand the **commercial imperative** while at the same time earning the **trust** of your more technical team members enabling us to help them get stuff done.
+      
 
-
-        We work on a philosophy of in-n-out. **We like short, punchy engagements.** We want to understand your challenge, find constraints, create the strategy, make the plan and coach your team to execute on it, leaving you with real change. "
+        &nbsp;
+        "
       button:
         label: "Learn more"
         url: "#"
 
     - image: "images/portfolio-ecommerce.png"
       title: "Build trust"
-      text: "Unlike your big name consulting firms we’re not looking to work on the same thing for as long as possible or for a foot in the door with which to bring in more of our spendy colleagues. 
+      text: "We work on a philosophy of in-n-out. **We like short, punchy engagements.** We want to understand your challenge, find constraints, create the strategy, make the plan and coach your team to execute on it, leaving you with real change.
+      
+      
+        Unlike your big name consulting firms we’re not looking to work on the same thing for as long as possible or for a foot in the door with which to bring in more of our spendy colleagues. 
       
 
         **We’ll be here if you need us again.**"

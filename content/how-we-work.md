@@ -2,7 +2,6 @@
 title = "How we work"
 description = "How we work in a nutshell"
 date = "2024-05-17"
-aliases = ["howwework"]
 author = "Mark Sargent, Darren Twiss"
 +++
 

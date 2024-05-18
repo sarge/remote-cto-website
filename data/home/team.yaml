@@ -1,0 +1,15 @@
+id: "team"
+
+title: "Meet the Team"
+
+content: "Come meet us"
+
+people:
+  - name: "Mark Sargent"
+    image: "images/photos/sarge.png"
+    summary: "I have made things"
+    
+  - name: "Darren Twiss"
+    image: "images/photos/darren.png"
+    summary: "I have made things too"
+    

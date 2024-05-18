@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ with .Site.Data.home.team }}
+
+<section class="section team py-5">
+  <div class="container">
+
+    <div class="row justify-content-center pb-5">
+      <div class="col-12">
+        {{ with .title }}
+        <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+        {{ end }}
+        {{ with .content }}
+        <p class="text-black-61 text-center pb-3">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="row g-4 pb-5">
+      {{ range .people }}
+      <div class="col-12 col-md-6 col-lg-6">
+        <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
+          <div class="aspect-ratio-62-5">
+            {{ partial "utilities/image.html" .image }}
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">{{ .name }}</h5>
+            <p class="card-text text-black-61">{{ .summary | plainify }}</p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+      
+    </div>
+  </div>
+</section>
+{{end}}
+{{ end }}

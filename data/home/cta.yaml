@@ -5,5 +5,5 @@ content:
   title: "Try our focused **free 20 minute** call now"
   image: "images/services-web-development.png"
   button:
-    label: "Let's talk"
+    label: "Book a call"
     url: "/call/"

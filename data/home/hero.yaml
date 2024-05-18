@@ -2,12 +2,11 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Experience **counts** for a lot"
+  title: "Experience **counts**"
   text: "Sometimes you just need some wise heads to stop you doing dumb shit.
     
 
     Remote CTO provides needle-in-a-haystack, unicorn-level experienced, down-to-earth humans that can help your technology businesses get from today to where you’re going."
-
   buttonPrimary:
     label: "How we work"
     url: "/how-we-work/"

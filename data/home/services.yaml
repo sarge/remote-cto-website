@@ -10,7 +10,7 @@ content:
       text: "We will quickly kick the tyres to see what you have built is what you really need. "
       button:
         label: "Learn more"
-        url: "#"
+        url: "/offerings/technology-reviews/"
 
     - image: "images/services-web-development.png"
       title: "Process Improvement"

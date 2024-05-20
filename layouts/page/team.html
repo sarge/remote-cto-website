@@ -24,12 +24,12 @@
           </div>
           <div class="card-body">
             <h5 class="card-title fw-semibold">{{ .name }}</h5>
-            <p class="card-text text-black-61">{{ .summary | plainify }}</p>
+            <p class="card-text">{{ .summary | markdownify }}</p>
+            <p class="card-text">{{ .experience | markdownify }}</p>
           </div>
         </a>
       </div>
       {{ end }}
-      
     </div>
   </div>
 </section>

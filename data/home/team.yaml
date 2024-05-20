@@ -2,14 +2,23 @@ id: "team"
 
 title: "Meet the Team"
 
-content: "Come meet us"
+# content: "Come meet us"
 
 people:
   - name: "Mark Sargent"
     image: "images/photos/sarge.png"
-    summary: "I have made things"
+    summary: "Come talk to me about your software delivery issues"
+    timezone: "NZST (New Zealand Standard Time)"
+    experience: "I have 20+ years of experience building software in a variety of industries, from Streaming Video to the Electricity Trading.
+    
+    
+      I bring pragmatism to the architecture table, understanding what is possible with the team you have.
+      "
+    booking_url: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3VEkEZy2lqDBWbIzj0BuSUtllz0oVJ3mXm3NNKArSYQnp33t_5oxzJ900B2Z_Bz8_jX4PFHzzM?gv=true"
     
   - name: "Darren Twiss"
     image: "images/photos/darren.png"
-    summary: "I have made things too"
-    
+    summary: "I love to simplify, lets talk about your complexity"
+    timezone: "NZST (New Zealand Standard Time)"
+    experience: ""
+    booking_url: ""

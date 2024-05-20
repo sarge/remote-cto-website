@@ -15,4 +15,10 @@ In fact we strive to limit our engagement to **6 months at most!** I know it see
 
 We will speak to you in a clear and direct manner, and will be as honest as possible. This might not always be easy to hear, but we believe that being clear is being kind.
 
-We love the simplicty of this model and hope you will to. Why not give us a call? [CTA??]
+We love the simplicty of this model and hope you will to. 
+
+
+Why not give us a [call?]({{< ref "call" >}})
+
+
+

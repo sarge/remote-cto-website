@@ -86,8 +86,7 @@ menus:
     #   weight: 5
 
 services:
-  googleAnalytics:
-    id: ""
+  _merge: shallow
 
 taxonomies:
   series: "series"
@@ -95,5 +94,6 @@ taxonomies:
 
 deployment:
   targets:
-    - name: "production"
+    - name: "staging"
       url: s3://remote-cto-website?region=ap-southeast-2
+

@@ -1,0 +1,5 @@
+baseURL: "https://www.remotecto.com/"
+
+services:
+  googleAnalytics:
+    id: "G-F22DTK53HE"

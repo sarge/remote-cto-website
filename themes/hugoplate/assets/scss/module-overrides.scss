@@ -49,10 +49,46 @@
 
 // cookie consent
 .cookie-box {
-  @apply rounded-lg #{!important};
+  @apply rounded-lg;
 }
 
 // slider
 .gallery-slider {
-  @apply ml-0 #{!important};
+  @apply ml-0;
+}
+
+.announcement {
+  color: black;
+}
+
+.search-modal {
+  color: black;
+}
+
+.form-input {
+  background-color: white;
+}
+
+h1 > {
+  strong {
+    color: #cdf5fd !important;
+  }
+}
+
+h2 > {
+  strong {
+    color: #cdf5fd !important;
+  }
+}
+
+h3 > {
+  strong {
+    color: #cdf5fd !important;
+  }
+}
+
+h4 > {
+  strong {
+    color: #cdf5fd !important;
+  }
 }

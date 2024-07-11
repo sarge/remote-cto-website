@@ -61,8 +61,8 @@
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}
   {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | minify | fingerprint | resources.PostProcess }}
 {{ else }}
-  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . }}
-  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . }}
+  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | fingerprint }}
+  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | fingerprint }}
 {{ end }}
 
 {{/* styles */}}

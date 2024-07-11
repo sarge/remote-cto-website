@@ -1,8 +1,9 @@
 ---
-title: John Doe
+title: Darren Twiss
 email: johndoe@email.com
-image: "/images/avatar.png"
+image: "images/photos/darren.png"
 description: this is meta description
+role: Partner
 social:
   - name: github
     icon: fa-brands fa-github

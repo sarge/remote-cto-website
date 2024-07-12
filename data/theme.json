@@ -19,9 +19,10 @@
         "font_family": {
             "primary": "Heebo:wght@400;600",
             "primary_type": "sans-serif",
-            "secondary": "Georgia:wght@500;700",
+            "secondary3": "Georgia:wght@500;700",
             "secondary2": "Montagu Slab:wght@500;700",
-            "secondary_type": "serif"
+            "secondary": "Signika:wght@500;700",
+            "secondary_type": "serif"  
         },
         "font_size": {
             "base": "16",

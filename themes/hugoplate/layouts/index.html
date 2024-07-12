@@ -94,6 +94,28 @@
   {{ end }}
   <!-- /Features -->
 
+  <!-- Offers -->
+  <section class="section pb-0 pt-10">
+    <div class="container">
+      <div class="row">
+        <div class=" mb-6 text-start">
+          <h2 class="mb-0">
+            What we offer
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        {{ $filterByPartner := where site.RegularPages "Section" "in" "offers" }}
+        {{ range first 3 $filterByPartner }}
+          <div class="md:col-4 lg:col-4 mb-14">
+            {{ partial "components/offers-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- Offers -->
+
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}

@@ -55,7 +55,8 @@ jobs:
       - name: Publish to GitHub Pages
         run: |
           npm run build
-          cat ./css/style.css
+          pwd
+
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1            

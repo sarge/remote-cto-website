@@ -56,6 +56,7 @@ jobs:
         run: |
           npm run build
           pwd
+          grep \\.border- ./public/css/*.css
 
 
       - name: Upload a Build Artifact

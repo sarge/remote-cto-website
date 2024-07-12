@@ -58,7 +58,8 @@ jobs:
           pwd
           ls -h .
           ls -h ./public/css
-          cat ./public/css/style.css
+          cat hugo_stats.json
+          # cat ./public/css/style.css
           grep border- ./public/css/*.css
 
 

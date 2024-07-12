@@ -60,7 +60,7 @@ jobs:
           ls -h ./public/css
           cat hugo_stats.json
           # cat ./public/css/style.css
-          grep border- ./public/css/*.css
+          grep border-d ./public/css/*.css
 
 
       - name: Upload a Build Artifact

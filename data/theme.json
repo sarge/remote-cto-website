@@ -20,7 +20,8 @@
             "primary": "Heebo:wght@400;600",
             "primary_type": "sans-serif",
             "secondary": "Georgia:wght@500;700",
-            "secondary_type": "sans-serif"
+            "secondary2": "Montagu Slab:wght@500;700",
+            "secondary_type": "serif"
         },
         "font_size": {
             "base": "16",

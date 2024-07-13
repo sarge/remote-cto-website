@@ -52,15 +52,9 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - name: Publish to GitHub Pages
+      - name: Publish to S3
         run: |
           npm run build
-          pwd
-          ls -h .
-          ls -h ./public/css
-          cat hugo_stats.json
-          # cat ./public/css/style.css
-          grep border-d ./public/css/*.css
 
 
       - name: Upload a Build Artifact

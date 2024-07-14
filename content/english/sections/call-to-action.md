@@ -5,7 +5,7 @@ description: "Let's talk about how we can help with your biggest technology issu
 button:
   enable: true
   label: "Book a call"
-  link: "https://github.com/zeon-studio/hugoplate"
+  link: call
 
 # don't create a separate page
 _build:

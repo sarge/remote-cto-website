@@ -1,0 +1,64 @@
+{{ define "main" }}
+{{/* {{ partial "page-header" . }} */}}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ with .Title }}
+        <h2 class="fw-bold text-center pb-3">{{ . }}</h2>
+        {{ end }}
+        {{ with .Params.description }}
+        <p class="text-xl text-black-61 text-center pb-10">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    {{range $index, $element := .Params.steps}}
+    <div class="row">
+      <div class="text-9xl col-1 pb-3 ">
+      </div>
+      <div class="text-9xl col-2 pb-3 ">
+        {{ math.Add $index 1}}.
+      </div>
+      <div class="text-xl col-8 pb-3 content-center">
+        <span class="">
+          {{ $element.step | markdownify }}
+        </span>
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{/*  ### Twenty minutes *is not a lot of time*, so we need to be very **intentional**.  */}}
+
+  <div class="row pt-6 pb-2">
+    <div class="col-12 text-center">
+      <h3>Book your call by checking with our availability</h3>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- Partners -->
+<section class="section pb-0 pt-1">
+  <div class="container">
+    <div class="row">
+      {{ $filterByPartner := where site.RegularPages "Params.role" "==" "Partner" }}
+      {{ range $filterByPartner }}
+      <div class="md:col-6 lg:col-6 mb-14">
+        {{ partial "components/booking-card" . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- Partners -->
+
+
+{{ end }}

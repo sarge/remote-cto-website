@@ -86,8 +86,7 @@ jobs:
 
       - name: Sync to S3
         id: deployment
-        run: aws s3 sync ./public/ s3://${{ vars.BUCKET_NAME }} --size-only --delete
-           # --cache-control max-age=31536000
+        run: aws s3 sync ./public/ s3://${{ vars.BUCKET_NAME }} --size-only --delete --cache-control max-age=60
 
       - name: Invalidate Cloudfront
         id: invalidate

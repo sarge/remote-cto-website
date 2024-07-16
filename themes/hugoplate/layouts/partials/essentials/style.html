@@ -58,8 +58,8 @@
 {{ $stylesLazy = $stylesLazy | resources.PostCSS }}
 
 {{ if hugo.IsProduction }}
-  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint  }}
-  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | minify | fingerprint }}
+  {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | fingerprint  }}
+  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | fingerprint }}
 {{ else }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | fingerprint }}
   {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | fingerprint }}

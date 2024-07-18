@@ -1,4 +1,5 @@
-baseURL = "https://www.remotecto.com/"
+#baseURL = "https://www.remotecto.com/"
+baseURL = "https://d1j5lm28kpjuds.cloudfront.net/"
 
 [services.googleAnalytics]
 ID = 'G-F22DTK53HE'
